@@ -1,0 +1,23 @@
+{
+  "name": "api-real-time-chat",
+  "version": "1.0.0",
+  "description": "Real time chat api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dedenurr/api-real-time-chat.git"
+  },
+  "keywords": [
+    "js",
+    "nodejs"
+  ],
+  "author": "DedeNr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dedenurr/api-real-time-chat/issues"
+  },
+  "homepage": "https://github.com/dedenurr/api-real-time-chat#readme"
+}

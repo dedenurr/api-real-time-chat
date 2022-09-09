@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const helmet = require('helmet');
 const morgan = require('morgan');
+const userRoute = require('./routes/users');
 
 dotenv.config();
 
@@ -16,13 +17,7 @@ app.use(express.json());
 app.use(helmet());
 app.use(morgan('common'));
 
-app.get('/', (req, res, next) => {
-  res.send('welcome to api chat realtime');
-});
-
-app.get('/users', (req, res, next) => {
-  res.send('welcome to users chat realtime');
-});
+app.use('/api/users', userRoute);
 
 app.listen(8800, () => {
   console.log('Backend server, Api chat realtime is Running ');

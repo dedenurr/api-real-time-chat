@@ -6,6 +6,8 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 const userRoute = require('./routes/users');
 const authRoute = require('./routes/auth');
+const conversationRoute = require('./routes/Conversation');
+const messageRoute = require('./routes/message');
 
 dotenv.config();
 
@@ -21,9 +23,9 @@ app.use(morgan('common'));
 // Api
 app.use('/api/users', userRoute);
 app.use('/api/auth', authRoute);
+app.use('/api/conversations', conversationRoute);
+app.use('/api/message', messageRoute);
 
 app.listen(8800, () => {
   console.log('Backend server, Api chat realtime is Running ');
 });
-
-//https://youtu.be/ldGl6L4Vktk?list=PLj-4DlPRT48lXaz5YLvbLC38m25W9Kmqy&t=793

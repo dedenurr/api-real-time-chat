@@ -11,8 +11,8 @@ const messageRoute = require('./routes/message');
 
 dotenv.config();
 
-mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true }, () => {
-  console.log('Connected to mongodb Succes');
+mongoose.connect(process.env.DB_URL, { useNewUrlParser: true, useUnifiedTopology: true }, () => {
+  console.log('Connected to Database Succes');
 });
 
 // Middleware

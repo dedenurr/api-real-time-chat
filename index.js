@@ -24,7 +24,7 @@ app.use(morgan('common'));
 app.use('/api/users', userRoute);
 app.use('/api/auth', authRoute);
 app.use('/api/conversations', conversationRoute);
-app.use('/api/message', messageRoute);
+app.use('/api/messages', messageRoute);
 
 app.listen(8800, () => {
   console.log('Backend server, Api chat realtime is Running ');

@@ -10,6 +10,12 @@
 # localhost:8800
 
 == Test in postman ==
-upload file 
+in your postman upload this file in repositori
+
+the name file:
+
+# chat-api.postman_collection.json
+
+# Enjoy It
 
 

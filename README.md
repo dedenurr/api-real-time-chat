@@ -8,3 +8,8 @@
 
 == in browser ==
 # localhost:8800
+
+== Test in postman ==
+upload file 
+
+

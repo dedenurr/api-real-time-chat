@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\":\"ade\",\r\n    \"email\":\"ade@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"raw": "{\r\n    \"username\":\"dede\",\r\n    \"email\":\"dede@gmail.com\",\r\n    \"password\":\"123456\",\r\n    \"city\":\"Karawang\",\r\n    \"From\":\"Indonesia\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -73,7 +73,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"desc\":\"this is my Description\",\r\n    \"userId\":\"631d368c2c602a5b507987f0\"\r\n}",
+					"raw": "{\r\n    \"userId\":\"631dc97acefb4e3dc41da58e\",\r\n    \"password\":\"123456\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -81,7 +81,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8800/api/users/631d368c2c602a5b507987f0",
+					"raw": "http://localhost:8800/api/users/631dc97acefb4e3dc41da58e",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -90,7 +90,7 @@
 					"path": [
 						"api",
 						"users",
-						"631d368c2c602a5b507987f0"
+						"631dc97acefb4e3dc41da58e"
 					]
 				}
 			},
@@ -103,7 +103,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\r\n    \"userId\":\"631d3346e0808c3a50af7dfb\"\r\n}",
+					"raw": "{\r\n    \"userId\":\"631dc97acefb4e3dc41da58e\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -111,7 +111,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8800/api/users/631d3346e0808c3a50af7dfb",
+					"raw": "http://localhost:8800/api/users/631dc97acefb4e3dc41da58e",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -120,28 +120,7 @@
 					"path": [
 						"api",
 						"users",
-						"631d3346e0808c3a50af7dfb"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get User by id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8800/api/users/631d40e04b70970f581af740",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8800",
-					"path": [
-						"api",
-						"users",
-						"631d40e04b70970f581af740"
+						"631dc97acefb4e3dc41da58e"
 					]
 				}
 			},
@@ -169,16 +148,34 @@
 			"response": []
 		},
 		{
-			"name": "Conversation",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
+			"name": "Get User by id",
 			"request": {
 				"method": "GET",
 				"header": [],
+				"url": {
+					"raw": "http://localhost:8800/api/users/631dcbe498758742b0e2444c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"users",
+						"631dcbe498758742b0e2444c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conversation",
+			"request": {
+				"method": "POST",
+				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"senderId\":\"631d368c2c602a5b507987f0\",\r\n    \"receiverId\":\"631d45a15cb5062fec6af394\"\r\n}",
+					"raw": "{\r\n    \"senderId\":\"631dcc1698758742b0e2444d\",\r\n    \"receiverId\":\"631dc99ecefb4e3dc41da58f\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -186,7 +183,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8800/api/conversations/631d368c2c602a5b507987f0",
+					"raw": "http://localhost:8800/api/conversations/",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -195,7 +192,28 @@
 					"path": [
 						"api",
 						"conversations",
-						"631d368c2c602a5b507987f0"
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get  conversations by user id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8800/api/conversations/631dc99ecefb4e3dc41da58f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"conversations",
+						"631dc99ecefb4e3dc41da58f"
 					]
 				}
 			},
@@ -208,7 +226,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"conversationId\":\"631d45c85cb5062fec6af395\",\r\n    \"sender\":\"631d45a15cb5062fec6af394\",\r\n    \"text\":\"Hey Dede Aku Ade, salam kenal\"\r\n}",
+					"raw": "{\r\n    \"conversationId\":\"631dce7d98758742b0e24453\",\r\n    \"sender\":\"631dc99ecefb4e3dc41da58f\",\r\n    \"text\":\"Hey dede Aku ade, salam kenal\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -231,12 +249,12 @@
 			"response": []
 		},
 		{
-			"name": "Get Message",
+			"name": "Get Message by Conversationid",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8800/api/messages/631d45c85cb5062fec6af395",
+					"raw": "http://localhost:8800/api/messages/631dcda798758742b0e24450",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -245,7 +263,7 @@
 					"path": [
 						"api",
 						"messages",
-						"631d45c85cb5062fec6af395"
+						"631dcda798758742b0e24450"
 					]
 				}
 			},

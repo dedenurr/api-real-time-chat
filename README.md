@@ -11,7 +11,7 @@
 
 == Test in postman ==
 
-in your postman upload this file in repositori
+in your postman upload this file in repository
 
 the name file:
 

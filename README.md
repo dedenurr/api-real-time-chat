@@ -1,7 +1,7 @@
 # api-real-time-chat
 
 ==Command==
-# npm install
+# yarn install
 
 == To run this project ==
 # nodemon
